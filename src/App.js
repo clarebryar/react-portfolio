@@ -1,12 +1,8 @@
 import './App.css';
-import BucketList from './components/BucketList';
+import ProjectList from './components/Project.js';
+import Footer from './components/Footer';
+import Container from './components/Container';
 
-function App() {
-  return (
-    <div className="bucket-app">
-      <BucketList />
-    </div>
-  );
-}
+const App = () => <Container />;
 
 export default App;
