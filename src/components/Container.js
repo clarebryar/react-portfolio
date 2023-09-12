@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Project from "../components/Project";
-import AboutMe from "../components/pages/AboutMe";
+import AboutMe from "../Pages/AboutMe";
 import { useState } from "react";
 
 export default function Container() {
@@ -30,6 +30,7 @@ export default function Container() {
         <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
     
         {renderPage()}
+        <Footer />
       </div>
     );
   }
