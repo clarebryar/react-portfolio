@@ -5,14 +5,14 @@ import React, { useState } from 'react';
 function Navigation({ currentPage, handlePageChange }) {
         return (
           <div>
-          <h2 style={{color: 'purple', 'text-align': 'center', 'padding-top': 30}}>Clare Bryar</h2>
+          <h1 >Clare Bryar</h1>
           
           <ul className="nav nav-tabs">
-            <li className="nav-item">
-              <a
+            <li className="nav-item" >
+              <a 
                 href="#aboutMe"
                 onClick={() => handlePageChange('AboutMe')}
-                className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}
+                className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
               >
                 About Me
               </a>
@@ -26,6 +26,17 @@ function Navigation({ currentPage, handlePageChange }) {
                 className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}
               >
                 Project
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#resume"
+                onClick={() => handlePageChange('Resume')}
+              
+      
+                className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+              >
+                Resume
               </a>
             </li>
             <li className="nav-item">

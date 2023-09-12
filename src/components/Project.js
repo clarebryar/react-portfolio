@@ -16,13 +16,13 @@ return (
          A MERN app that searches for books using Google Books API.
         </Card.Text>
         <a href='https://github.com/clarebryar/Book-Search-Engine'>
-        <Button variant="primary">Book Search Engine on Github</Button>
+        <Button variant="info">Book Search Engine on Github</Button>
         </a>
        
       </Card.Body>
     </Card>
 
-    <Card style={{ width: '18rem'}} >
+    <Card style={{ width: '18rem'}}  display="flex">
       <Card.Img variant="top" src="./images/PWA-demo.gif" />
       <Card.Body>
         <Card.Title>PWA Text Editor</Card.Title>
@@ -30,7 +30,7 @@ return (
           Text editor application, that is a Progressive Web App, and can download remotely to work offline.  
         </Card.Text>
         <a href='https://github.com/clarebryar/PWA-Text-Editor'>
-        <Button variant="primary">PWA Text Editor on Github</Button> </a>
+        <Button variant="info">PWA Text Editor on Github</Button> </a>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }} display="flex">
@@ -41,7 +41,7 @@ return (
           This project is a social network API built with mongoDB, and mongoose
         </Card.Text>
         <a href = 'https://github.com/clarebryar/Employee-Roster'> 
-        <Button variant="primary">No SQL Social Network on Github</Button> </a>
+        <Button variant="info">No SQL Social Network on Github</Button> </a>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }} display="flex">
@@ -52,7 +52,7 @@ return (
           This project uses mySQL database to keep track of employee information.
         </Card.Text>
         <a href='https://github.com/clarebryar/Employee-Roster'>
-        <Button variant="primary">Employee Roster on Github</Button></a>
+        <Button variant="info">Employee Roster on Github</Button></a>
       </Card.Body>
     </Card>
     <Card style={{ width: '18rem' }} display="flex">
@@ -63,10 +63,10 @@ return (
          Using express js, this app creates a new note and saves it amongst a list
         </Card.Text>
         <a href='https://github.com/clarebryar/11-Note-Taker'>
-        <Button variant="primary">Note Taker on Github</Button></a>
+        <Button variant="info">Note Taker on Github</Button></a>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }} display="flex">
+    <Card style={{ width: '18rem'}} display="flex">
       <Card.Img variant="top" src="./images/readMe-generator.png" />
       <Card.Body>
         <Card.Title>Read Me Generator</Card.Title>
@@ -74,7 +74,7 @@ return (
           This app generates a README.md file, based on the user's input
         </Card.Text>
         <a href='https://github.com/clarebryar/09-ReadMe-Generator/tree/main/Develop'>
-        <Button variant="primary">ReadMe Generator on Github</Button></a>
+        <Button variant="info">ReadMe Generator on Github</Button></a>
       </Card.Body>
     </Card>
 
