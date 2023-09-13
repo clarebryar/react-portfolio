@@ -13,7 +13,7 @@ import Row from 'react-bootstrap/Row';
    
     return (
         <Row  style={{'marginLeft': '3em'}}>
-    <a style= {{"color":"antiquewhite", 'textDecoration': 'none',  }} download='resume.txt' target="blank" href='http://localhost:3000/?#resume' >Click to download</a>
+    <a style= {{"color":"antiquewhite", 'textDecoration': 'none',  }} download='resume.txt' target="blank" href='https://clarebryar.github.io/react-portfolio/#resume' >Click to download</a>
     <h2> Experience</h2>
         <ul>
             <li>
