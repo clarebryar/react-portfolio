@@ -11,9 +11,38 @@ import Row from 'react-bootstrap/Row';
 
 export default function Resume () {
     return (
-        <Row>
+        <Row  style={{'margin-left': '3em'}}>
     <a href='#Resume' style= {{"color":"antiquewhite", 'textDecoration': 'none',  }} download>Click to download</a>
-    <h2></h2>
+    <h2> Experience</h2>
+        <ul>
+            <li>
+                Service Titan 
+                <p>Pro Product Success Manager</p>
+            </li>
+            <li>
+                Schedule Engine 
+                <p>Customer Success Manager </p>
+            </li>
+            <li >
+                Groupon 
+                <p style={{'margin-bottom':'0'}}>Merchant Success Manager</p>
+                <p>Account Manager</p>
+            </li>
+        </ul>
+
+        <h2> Education</h2>
+        <ul>
+            <li>
+                Siena College  
+                <p>Bachelor of Arts in Psycholog and Marketing </p>
+            </li>
+            <li> Northwestern University 
+                <p>Full Stack Cooding Bootcamp</p>
+            </li>
+        </ul>
+        
+    
+    
     </Row>
     )
 

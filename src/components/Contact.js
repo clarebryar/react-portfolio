@@ -13,11 +13,14 @@ import Button from 'react-bootstrap/Button';
 
 function Contact() {
   const [validated, setValidated] = useState(false);
+const [email, setEmail] = useState('');
+
   const validateEmail = (email) => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   
    
     if (re.test(String(email).toLowerCase()) === false) {
+      console.log('invalid')
       return <Form.Control.Feedback type="invalid">
       Please choose a username.
     </Form.Control.Feedback>
@@ -33,13 +36,15 @@ function Contact() {
     }
 
     setValidated(true);
+    validateEmail(email)
+    
   };
 
  
 
     return (
         <>
-        <Form style={{'textAlign': 'center', 'padding-top': 30, 'margin':'1em'}}>
+        <Form style={{'textAlign': 'center', 'padding-top': 30, 'margin':'1em' }}>
          <Form.Label htmlFor="basic-url">Sign Up to Receive more Info! </Form.Label>
 
         <Row  >   
@@ -55,8 +60,9 @@ function Contact() {
         <Row>
         <Col xs={6}>
         <InputGroup className="mb-3">
-          <InputGroup.Text>email</InputGroup.Text>
-          <Form.Control aria-label="Amount " required onClick={validateEmail()}/>
+          <InputGroup.Text>Email</InputGroup.Text>
+          {setEmail}
+          <Form.Control aria-label="Amount " required  />
        
         </InputGroup>
         </Col>
