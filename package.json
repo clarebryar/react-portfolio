@@ -2,6 +2,7 @@
   "name": "00-practice-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://clarebryar.github.io/react-portfolio",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.16.4",
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.1",
+    "gh-pages": "^6.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.8.0",
     "react-dom": "17.0.2",
@@ -20,7 +22,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+      "deploy": "gh-pages -d build",
+      "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": [
