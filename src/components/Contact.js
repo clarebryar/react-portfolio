@@ -21,9 +21,9 @@ const [email, setEmail] = useState('');
    
     if (re.test(String(email).toLowerCase()) === false) {
       console.log('invalid')
-      return <Form.Control.Feedback type="invalid">
+      return <p type="invalid">
       Please choose a username.
-    </Form.Control.Feedback>
+    </p>
       
     }
   }

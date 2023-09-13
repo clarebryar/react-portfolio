@@ -9,24 +9,25 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
-export default function Resume () {
+ function Resume () {
+   
     return (
-        <Row  style={{'margin-left': '3em'}}>
-    <a href='#Resume' style= {{"color":"antiquewhite", 'textDecoration': 'none',  }} download>Click to download</a>
+        <Row  style={{'marginLeft': '3em'}}>
+    <a style= {{"color":"antiquewhite", 'textDecoration': 'none',  }} download='resume.txt' target="blank" href='http://localhost:3000/?#resume' >Click to download</a>
     <h2> Experience</h2>
         <ul>
             <li>
-                Service Titan 
-                <p>Pro Product Success Manager</p>
+                Company: Service Titan 
+                <p>Title: Pro Product Success Manager</p>
             </li>
             <li>
-                Schedule Engine 
-                <p>Customer Success Manager </p>
+                Company: Schedule Engine 
+                <p>Title: Customer Success Manager </p>
             </li>
             <li >
-                Groupon 
-                <p style={{'margin-bottom':'0'}}>Merchant Success Manager</p>
-                <p>Account Manager</p>
+                Company: Groupon 
+                <p style={{'marginBottom':'0'}}>Title: Merchant Success Manager</p>
+                <p>Title: Account Manager</p>
             </li>
         </ul>
 
@@ -34,10 +35,11 @@ export default function Resume () {
         <ul>
             <li>
                 Siena College  
-                <p>Bachelor of Arts in Psycholog and Marketing </p>
+                <p>Bachelor of Arts in Psychology and Marketing </p>
             </li>
             <li> Northwestern University 
-                <p>Full Stack Cooding Bootcamp</p>
+                <p style={{'marginBottom':'0'}}>Full Stack Coding Bootcamp</p>
+                <p>Skils: React, Node.js, Express, MongoDB, SQL, HTML, CSS</p>
             </li>
         </ul>
         
@@ -47,3 +49,4 @@ export default function Resume () {
     )
 
 }
+export default Resume;
