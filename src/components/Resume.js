@@ -10,5 +10,11 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
 export default function Resume () {
-    <a href='#Resume' download>Click to download</a>
+    return (
+        <Row>
+    <a href='#Resume' style= {{"color":"antiquewhite", 'textDecoration': 'none',  }} download>Click to download</a>
+    <h2></h2>
+    </Row>
+    )
+
 }

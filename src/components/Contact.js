@@ -13,22 +13,29 @@ import Button from 'react-bootstrap/Button';
 
 function Contact() {
   const [validated, setValidated] = useState(false);
-
+  const validateEmail = (email) => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  
+   
+    if (re.test(String(email).toLowerCase()) === false) {
+      return <Form.Control.Feedback type="invalid">
+      Please choose a username.
+    </Form.Control.Feedback>
+      
+    }
+  }
   const handleSubmit = (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+    console.log('notvalidated')
     }
 
     setValidated(true);
   };
 
-  const formStarted = (event) => {
-    if (event.keyup) {
-      return 'isInvalid'
-    }
-  }
+ 
 
     return (
         <>
@@ -49,7 +56,7 @@ function Contact() {
         <Col xs={6}>
         <InputGroup className="mb-3">
           <InputGroup.Text>email</InputGroup.Text>
-          <Form.Control aria-label="Amount (to the nearest dollar)" required />
+          <Form.Control aria-label="Amount " required onClick={validateEmail()}/>
        
         </InputGroup>
         </Col>
@@ -59,14 +66,14 @@ function Contact() {
 
         <InputGroup>
           <InputGroup.Text>Feedback</InputGroup.Text>
-          <Form.Control as="textarea" aria-label="With textarea" required />
+          <Form.Control aria-label="With textarea" required />
         </InputGroup>
         </Col>
         </Row>
         <Row>
         <Col style= {{"textAlign": "center"}} xs={6}>
 
-        <Button variant="info" type="submit">Submit</Button>
+        <Button onClick = {handleSubmit} variant="info" type="submit">Submit</Button>
         </Col>
         </Row>
         </Form>

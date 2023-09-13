@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Project from "../components/Project";
 import AboutMe from "../Pages/AboutMe";
+import Resume from "./Resume";
 import { useState } from "react";
 
 export default function Container() {
@@ -15,6 +16,9 @@ export default function Container() {
       }
       if (currentPage === 'Project') {
         return <Project />;
+      }
+      if (currentPage === 'Resume') {
+        return <Resume/>;
       }
       if (currentPage === 'Contact') {
         return <Contact/>;
